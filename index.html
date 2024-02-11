@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title> Yêu Chị Ớt </title>
+    <title> I love You LTA </title>
     <meta name="Generator" content="EditPlus">
     <meta name="Author" content="">
     <meta name="Keywords" content="">
@@ -30,6 +30,9 @@
     <div class="box">
         <canvas id="pinkboard"></canvas>
     </div>
+
+    <audio src="https://cdn.biihappy.com/ziiweb/wedding-musics/CuoinhauDi-BuiAnhTuanHienHo.mp3" controls="controls" style="display: none;"></audio>
+
     <script>
         var settings = {
             particles: {
@@ -280,6 +283,12 @@
                 render();
             }, 10);
         })(document.getElementById('pinkboard'));
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const audioPlayer = document.querySelector("audio");
+
+            audioPlayer.play();
+        });
     </script>
 </body>
 
