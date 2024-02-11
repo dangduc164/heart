@@ -31,8 +31,9 @@
         <canvas id="pinkboard"></canvas>
     </div>
 
-    <audio src="https://cdn.biihappy.com/ziiweb/wedding-musics/CuoinhauDi-BuiAnhTuanHienHo.mp3" controls="controls" style="display: none;"></audio>
+    <audio src="https://cdn.biihappy.com/ziiweb/wedding-musics/CuoinhauDi-BuiAnhTuanHienHo.mp3" controls="controls" autoplay style="display: none;"></audio>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
         var settings = {
             particles: {
@@ -284,11 +285,12 @@
             }, 10);
         })(document.getElementById('pinkboard'));
 
-        document.addEventListener('DOMContentLoaded', function() {
+        $(document).ready(function() {
             const audioPlayer = document.querySelector("audio");
-
-            audioPlayer.play();
-        });
+            setTimeout(() => {
+                audioPlayer.play();
+            }, 1000);
+        })
     </script>
 </body>
 
